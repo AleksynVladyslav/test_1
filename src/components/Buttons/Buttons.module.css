@@ -1,0 +1,30 @@
+.list{
+    list-style: none;
+    display: flex;gap: 30px;
+outline: 2px solid red;
+}
+.item{
+
+}
+.button{
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.list .button:first-child{
+    background: red;
+}
+
+.list .button:nth-child(2){    
+    background-color: blue;
+}
+
+.list .button:nth-child(3){    
+    background: green;
+}
+
+ .item:last-child{    
+    background: purple;
+}

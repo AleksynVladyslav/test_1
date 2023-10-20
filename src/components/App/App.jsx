@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 
+import Title from 'components/Title/Title';
+import { Buttons } from 'components/Buttons/Buttons';
+
 class App extends Component {
-  state = {};
+  state = {
+    red:'red',
+    blue:'blue',
+    green:'green',
+    purple:'purple'
+  };
 
   render() {
-    return;
-    <></>;
+    const {red,blue, green, purple} = this.state
+    return(
+      <>
+      <Title title="Background color changer"/>
+      <Buttons buttons= {[red, blue,green,purple]}/>
+      </>
+    )
   }
 }
 
