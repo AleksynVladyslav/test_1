@@ -1,6 +1,5 @@
-export const Title = ({title}) =>{
-    return(
-<h1>{title}</h1>)
-}
+import css from './Title.module.css';
 
-export default Title
+export const Title = ({ title }) => {
+  return <h1 className={css.title}>{title}</h1>;
+};
